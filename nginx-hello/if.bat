@@ -5,4 +5,5 @@ If "%containerId%" == "" (
   echo "No Container running"
 ) ELSE (
   docker stop %ContainerId%
+  docker rm -f %ContainerId%
 )
